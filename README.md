@@ -10,6 +10,6 @@ The AdamNet Foundation creates Linked Open Data from cultural heritage metadata 
 
 ## /am/ Amsterdam Museum - museumobjects (/am/)
 
-## /oba/ Public Library - publictaions (mainly books)
+## /oba/ Public Library - publications (mainly books)
 Selection of the complete collection
 
