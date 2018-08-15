@@ -2,11 +2,13 @@
 .idea
 
 # config files
-oba/config.py
+py/oba/config.py
 
 # cache
-oba/__pycache__
+py/oba/__pycache__
 
 # PHP part
-vendor/
-composer.lock
+php/vendor/
+php/composer.lock
+
+php/data/saa/
