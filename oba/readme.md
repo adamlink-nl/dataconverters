@@ -6,7 +6,7 @@ These scripts (python3) create the dataset <https://data.adamlink.nl/oba/adamcat
 The data of the catalogue of the OBA is available through an API, delivering XML.
 
 ## config.py
-You need an API-key. Put it in this file. Contact the OBA for more information.
+You need an API-key. Rename the `config.py.dist` to `config.py` and put the key in this file. Contact the OBA for more information.
 
 ## getDataOBA.py
 This script searches for publications with the string "Amsterdam" in a particular field of the metadata.
