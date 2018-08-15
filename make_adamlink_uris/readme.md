@@ -5,7 +5,8 @@ This script (python3) replaces all original URIs, used as an object in a triple,
 ## introduction
 To create a convenient aggregated dataset <https://data.adamlink.nl/adamnet/all/> we mapped the original RDF to one standardized AdamLink specific datamodel. As a final step we convert all the various URIs (eg. for persons VIAF, RKDartists, AM-specific URI's) to our own specific AdamLink URI.
 
-## make_adamlink_uris.py
+## replace_adamlink_uris.py
 This script:
-- reads the Turtle files with all the owl:sameAs relations between the original URIs and the AdamLink URIs.
-- reads an original metadata turtle-file and replaces the URIs
+- downloads the latest files with AdamLink URIs, containing all the owl:sameAs relations between the original URIs and the AdamLink URIs into directory adamlink_uris/
+- reads these files
+- reads an original metadata turtle-file from directory in/, replaces the URIs, and writes a new file in directory out/

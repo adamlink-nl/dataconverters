@@ -1,0 +1,7 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://hdl.handle.net/11259/collection.277> a edm:providedCHO;
+    rdfs:label "Rembrandt's moeder aan tafel: driekwart lengte, naar rechts";
+    dc:creator <https://rkd.nl/explore/artists/66219> .
