@@ -1,0 +1,8 @@
+# dev files
+.idea
+
+# config files
+oba/config.py
+
+# cache
+oba/__pycache__
