@@ -11,9 +11,7 @@ void = rdflib.Namespace("http://rdfs.org/ns/void#")
 schema = rdflib.Namespace("http://schema.org/")
 
 # set uri's
-dataset = rdflib.URIRef("https://data.adamlink.nl/oba/amcat/")
-booktype = rdflib.URIRef("http://vocab.getty.edu/aat/300028051")
-pertype = rdflib.URIRef("http://vocab.getty.edu/aat/300026657")
+dataset = rdflib.URIRef("https://data.adamlink.nl/am/amcollect/")
 
 # process original ttl-files
 ttlFiles = [x for x in os.listdir("org/") if x.endswith(".ttl")]
@@ -32,26 +30,6 @@ for infile in ttlFiles:
         # add void:inDataset
         if p == dc.identifier:
             g.add((s,void.inDataset, dataset))
-
-        # add dc.type
-        if p == rdf.type and o == schema.Book:
-            g.add((s,dc.type, booktype))
-        if p == rdf.type and o == schema.Periodical:
-            g.add((s,dc.type, pertype))
-
-        # replace mapping schema to dc
-        if p == schema.about:
-            g.add((s,dc.subject, o))
-            g.remove((s,p,o))
-        if p == schema.author:
-            g.add((s,dc.creator, o))
-            g.remove((s,p,o))
-        if p == schema.contributor:
-            g.add((s,dc.contributor, o))
-            g.remove((s,p,o))
-        if p == schema.name:
-            g.add((s,dc.title, o))
-            g.remove((s,p,o))
 
     # write new turtle-file
     outfile = infile

@@ -6,16 +6,18 @@ import os
 # set namespaces
 dc  = rdflib.Namespace("http://purl.org/dc/elements/1.1/")
 rdf  = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+rdfs  = rdflib.Namespace("http://www.w3.org/2000/01/rdf-schema#")
 edm  = rdflib.Namespace("http://www.europeana.eu/schemas/edm/")
 void = rdflib.Namespace("http://rdfs.org/ns/void#")
 schema = rdflib.Namespace("http://schema.org/")
 
 # set uri's
-dataset = rdflib.URIRef("https://data.adamlink.nl/am/amcollect/")
+dataset = rdflib.URIRef("https://data.adamlink.nl/am/amperson/")
 
 # process original ttl-files
-ttlFiles = [x for x in os.listdir() if x.endswith(".org.ttl")]
+ttlFiles = [x for x in os.listdir("org/") if x.endswith(".ttl")]
 for infile in ttlFiles:
+    infile = "org/" + infile
     print(infile) # print progress
 
     # read file into graph-object
@@ -27,12 +29,12 @@ for infile in ttlFiles:
     for s,p,o in g.triples((None, None, None)):
 
         # add void:inDataset
-        if p == dc.identifier:
+        if p == rdfs.label:
             g.add((s,void.inDataset, dataset))
 
     # write new turtle-file
     outfile = infile
-    outfile = outfile.replace(".org.",".adm.")
+    outfile = outfile.replace("org/","org_converted/")
     s = g.serialize(format='turtle')
     f = open(outfile,"wb")
     f.write(s)

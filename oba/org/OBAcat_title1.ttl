@@ -1,0 +1,103 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.bibliotheken.nl/id/nbt/p09430744X> dc:identifier "|oba-catalogus|4123" ;
+    dc:subject "20e eeuw",
+        "Amsterdam",
+        "Geschiedenis" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C4123> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F09430744X&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p168250195> dc:description "Toeristische informatie in woord en beeld." ;
+    dc:identifier "|oba-catalogus|181194" ;
+    dc:subject "Amsterdam",
+        "Fotoboeken" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C181194> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F168250195&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p189501014> dc:identifier "|oba-catalogus|3306" ;
+    dc:subject "19e eeuw",
+        "Amsterdam",
+        "Fotoboeken" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C3306> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F189501014&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p194109119> dc:identifier "|oba-catalogus|2999" ;
+    dc:subject "Amsterdam",
+        "Zegels" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C2999> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F194109119&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p227322096> dc:identifier "|oba-catalogus|2515" ;
+    dc:subject "!077976797!Amsterdam",
+        "Amsterdam",
+        "Gedichten" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C2515> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F227322096&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p264817346> dc:description "Fotoboek over Amsterdam in de jaren '50 en '60." ;
+    dc:identifier "|oba-catalogus|585776" ;
+    dc:subject "!07805124X!Oorthuys",
+        "20e eeuw",
+        "Amsterdam",
+        "Fotoboeken",
+        "Oorthuys, Cas" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C585776> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F264817346&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p310647371> dc:description "Bij de crematie van een vriendin besluiten twee oude vrienden elkaar bij te staan bij het sterven, indien zij zelf niet meer in staat zullen zijn om over hun einde te beslissen." ;
+    dc:identifier "|oba-catalogus|812718" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C812718> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F310647371&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p354959123> dc:identifier "|oba-catalogus|1073572" ;
+    dc:subject "Amsterdam",
+        "Reisgidsen" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1073572> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F354959123&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p355269813> dc:identifier "|oba-catalogus|1091291" ;
+    dc:subject "Amsterdam",
+        "Reisgidsen" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1091291> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F355269813&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p372653529> dc:description "De familie Jansen gaat een dagje naar Amsterdam en wil alles van de stad zien. Bij de paginagrote sfeervolle waterverfillustraties wordt iets verteld over bezienswaardigheden als Artis, het Rijksmuseum en het Paleis op de Dam. Vanaf ca. 6 t/m 9 jaar." ;
+    dc:identifier "|oba-catalogus|1150982" ;
+    dc:subject "Amsterdam" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1150982> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F372653529&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p372671306> dc:identifier "|oba-catalogus|1121013" ;
+    dc:subject "Amsterdam",
+        "Reisgidsen" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1121013> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F372671306&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p376137916> dc:description "Ontdek wat er in Amsterdam te beleven is. Informatie over musea, gebouwen en tuinen wordt afgewisseld met een verhaal waarin Evi (8) en Junior (6) de stad bezoeken. Met kleurenfoto's en stripachtige kleurenillustraties. Vanaf ca. 6 jaar, zelfstandig vanaf ca. 8 t/m 10 jaar." ;
+    dc:identifier "|oba-catalogus|1132185" ;
+    dc:subject "Amsterdam",
+        "Reisgidsen" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1132185> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F376137916&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p393976920> dc:description "Beschrijving van Amsterdam in de zeventiende eeuw, in de vorm van een reisgids met bezienswaardigheden en uitgaansmogelijkheden voor toeristen." ;
+    dc:identifier "|oba-catalogus|1146633" ;
+    dc:subject "Amsterdam",
+        "Cultuurgeschiedenis",
+        "Reisgidsen" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1146633> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F393976920&width=1024&token=fe58476d> .
+
+<http://data.bibliotheken.nl/id/nbt/p406603162> dc:identifier "|oba-catalogus|1161648" ;
+    dc:subject "Amsterdam",
+        "Reisgidsen" ;
+    edm:isShownAt <https://zoeken.oba.nl/detail/?itemid=%7Coba-catalogus%7C1161648> ;
+    foaf:depiction <https://nbc.acc1.bibliotheek.nl/thumbnail?uri=http%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F406603162&width=1024&token=fe58476d> .
+

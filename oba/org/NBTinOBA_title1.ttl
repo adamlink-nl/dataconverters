@@ -1,0 +1,245 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.bibliotheken.nl/id/thes/p075301482> schema:owns <http://data.bibliotheken.nl/id/nbt/p168250195>,
+        <http://data.bibliotheken.nl/id/nbt/p189501014>,
+        <http://data.bibliotheken.nl/id/nbt/p194109119>,
+        <http://data.bibliotheken.nl/id/nbt/p227322096>,
+        <http://data.bibliotheken.nl/id/nbt/p264817346>,
+        <http://data.bibliotheken.nl/id/nbt/p310647371>,
+        <http://data.bibliotheken.nl/id/nbt/p354959123>,
+        <http://data.bibliotheken.nl/id/nbt/p355269813>,
+        <http://data.bibliotheken.nl/id/nbt/p372653529>,
+        <http://data.bibliotheken.nl/id/nbt/p372671306>,
+        <http://data.bibliotheken.nl/id/nbt/p376137916>,
+        <http://data.bibliotheken.nl/id/nbt/p393976920>,
+        <http://data.bibliotheken.nl/id/nbt/p406603162> .
+
+<http://data.bibliotheken.nl/id/nbt/p09430744X> a schema:Book ;
+    rdfs:label "Amsterdam / uitg. met medew. van het gemeentebestuur" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p241923581>,
+        <http://data.bibliotheken.nl/id/thes/p241923832> ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:inLanguage "ned" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "176 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/65903411> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p09430744X> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p168250195> a schema:Book ;
+    rdfs:label "Amsterdam / foto's: Jan den Hengst ; tekst: Jacques Constant ; [eindred.: Inmerc]" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075606313>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p068823592>,
+        <http://data.bibliotheken.nl/id/thes/p075446766> ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p072837764> ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9066113057" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "94 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/898986197> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p168250195> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p189501014> a schema:Book ;
+    rdfs:label "Amsterdam in foto's uit de 19e eeuw / [samenst.:] Simon van Blokland ; [red.: TextCase Boekproducties]" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p075389487> ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p074934066> ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9054770201" ;
+    schema:name "Amsterdam in foto's uit de 19e eeuw" ;
+    schema:numberOfPages "159 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/67745418> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p189501014> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p194109119> a schema:Book ;
+    rdfs:label "Amsterdam" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:inLanguage "ned" ;
+    schema:isPartOf <http://data.bibliotheken.nl/id/nbt/p045116679> ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "57 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/66109421> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p194109119> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p227322096> a schema:Book ;
+    rdfs:label "Amsterdam, de stad in gedichten / ingel. door Guus Luijters ; [samenst. Harold de Croon ... et al.]" ;
+    dcterms:hasFormat <http://data.bibliotheken.nl/id/nbt/p342350609>,
+        <http://data.bibliotheken.nl/id/nbt/p342350617> ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p07562947X>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p192748939> ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9076927014" ;
+    schema:name "Amsterdam, de stad in gedichten" ;
+    schema:numberOfPages "191 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/67032760> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p227322096> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p264817346> a schema:Book ;
+    rdfs:label "Cas Oorthuys : Amsterdam / Cas Oorthuys, foto's ; Flip Bool, Henk Raaff, tekst ; [red. Willem Ellenbroek ... et al.]" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075606313>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p067843433> ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p068514654>,
+        <http://data.bibliotheken.nl/id/thes/p069179433>,
+        <http://data.bibliotheken.nl/id/thes/p071245758> ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9059370651" ;
+    schema:name "Cas Oorthuys : Amsterdam" ;
+    schema:numberOfPages "158 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/66545114> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p264817346> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p310647371> a schema:Book ;
+    rdfs:label "Amsterdam / Ian McEwan ; vert. [uit het Engels] door Rien Verhoef" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075629410> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p068842910> ;
+    schema:bookEdition "5e [i.e. 7e] dr" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p068058594> ;
+    schema:description "1e dr. Nederlandse uitg.: 1998" ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9789061698500" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "183 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/230849383> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p310647371> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p354959123> a schema:Book ;
+    rdfs:label "Amsterdam / [vert. uit het Frans Katrien Meuleman ; red. Loes Berkhout ; hoofdred. Pierre Josse ; red. Olivier Page ... et al. ; cartogr. Hachette Tourisme]" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075616394>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p192834320>,
+        <http://data.bibliotheken.nl/id/thes/p310737478> ;
+    schema:inLanguage "ned" ;
+    schema:isPartOf <http://data.bibliotheken.nl/id/nbt/p091106222> ;
+    schema:isbn "9789401406376" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "252 p" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/827214041> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p354959123> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p355269813> a schema:Book ;
+    rdfs:label "Amsterdam / [text: Susanne Völler ; coördination: Els Andriesse ... et al. ; transl. from the German and ed.: Cait Kennedy ... et al. ; cartogr.: DuMont Reisekartografie]" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075616394>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p24440576X> ;
+    schema:bookEdition "1st print" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p363864601> ;
+    schema:description "Oorspr. Duitse uitg.: Köln : DuMont, cop. 2012" ;
+    schema:inLanguage "eng" ;
+    schema:isPartOf <http://data.bibliotheken.nl/id/nbt/p190162171> ;
+    schema:isbn "9789018037093" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "128 p., [1] krt" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/855913144> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p355269813> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p372653529> a schema:Book ;
+    rdfs:label "Amsterdam / gezien en getekend door Georgien Overwater" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075619415>,
+        <http://data.bibliotheken.nl/id/thes/p075629550>,
+        <http://data.bibliotheken.nl/id/thes/p075634864> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p069551111> ;
+    schema:bookEdition "Eerste druk" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9789025865740" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "28 ongenummerde pagina's" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/906194263> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p372653529> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p372671306> a schema:Book ;
+    rdfs:label "100% Amsterdam / author Evelien Vehof ; translation [from the Dutch] Jik Boom ; cartografie Van Oort Redactie en Kartografie" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075616394>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p331905469>,
+        <http://data.bibliotheken.nl/id/thes/p343303590> ;
+    schema:bookEdition "4th (completely revised) edition" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p382031377> ;
+    schema:description "1e druk verschenen onder de auteursnaam Tijn Kramer: 2008" ;
+    schema:inLanguage "eng" ;
+    schema:isPartOf <http://data.bibliotheken.nl/id/nbt/p244221057> ;
+    schema:isbn "9789057676710" ;
+    schema:name "100% Amsterdam" ;
+    schema:numberOfPages "148 pagina's" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/892102265> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p372671306> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p376137916> a schema:Book ;
+    rdfs:label "Amsterdam / auteur: My Productions ; fotografie: Kidscitytrips.nl ; illustraties: Kidscitytrips.nl" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075629550>,
+        <http://data.bibliotheken.nl/id/thes/p075634872> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p351232028> ;
+    schema:bookEdition "1e druk" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:inLanguage "ned" ;
+    schema:isPartOf <http://data.bibliotheken.nl/id/nbt/p370478789> ;
+    schema:isbn "9789081951999" ;
+    schema:name "Amsterdam" ;
+    schema:numberOfPages "96 pagina's" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/906194743> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p376137916> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p393976920> a schema:Book ;
+    rdfs:label "Amsterdam voor vijf duiten per dag / Maarten Hell & Emma Los" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p170385892> ;
+    schema:bookEdition "Derde druk" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p290794269> ;
+    schema:description "1e druk: 2011" ;
+    schema:inLanguage "ned" ;
+    schema:isbn "9789025300692" ;
+    schema:name "Amsterdam voor vijf duiten per dag" ;
+    schema:numberOfPages "143 pagina's" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/925376046> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p393976920> ] .
+
+<http://data.bibliotheken.nl/id/nbt/p406603162> a schema:Book ;
+    rdfs:label "Time to momo Amsterdam / locals Femke Dam, Daphne Damiaans ; fotografie Daphne Damiaans ; cartografie Van Oort Redactie en Kartografie" ;
+    schema:about <http://data.bibliotheken.nl/id/thes/p075616394>,
+        <http://data.bibliotheken.nl/id/thes/p075629550> ;
+    schema:author <http://data.bibliotheken.nl/id/thes/p331905469>,
+        <http://data.bibliotheken.nl/id/thes/p392189461> ;
+    schema:bookEdition "1e druk" ;
+    schema:bookFormat <http://bibliograph.net/PrintBook> ;
+    schema:contributor <http://data.bibliotheken.nl/id/thes/p371689414>,
+        <http://data.bibliotheken.nl/id/thes/p392106892> ;
+    schema:inLanguage "ned" ;
+    schema:isPartOf <http://data.bibliotheken.nl/id/nbt/p406592802> ;
+    schema:isbn "9789057677519" ;
+    schema:name "Time to momo Amsterdam" ;
+    schema:numberOfPages "149 pagina's" ;
+    schema:publication [ ] ;
+    owl:sameAs <http://www.worldcat.org/oclc/959912509> ;
+    foaf:isPrimaryTopicOf [ foaf:primaryTopic <http://data.bibliotheken.nl/id/nbt/p406603162> ] .
+

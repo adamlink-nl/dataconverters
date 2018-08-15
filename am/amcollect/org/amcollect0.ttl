@@ -587,9 +587,9 @@ He was removed from office after the surrender to the Prussian troops"""@en,
 <http://hdl.handle.net/11259/collection.38> a edm:providedCHO ;
     rdfs:label "Het kindje gaat school" ;
     dc:creator [ dc:creator <http://hdl.handle.net/11259/people.10974> ;
-            schema:roleName "auteur" ],
+            schema:roleName "etser" ],
         [ dc:creator <http://hdl.handle.net/11259/people.10974> ;
-            schema:roleName "etser" ] ;
+            schema:roleName "auteur" ] ;
     dc:description "Op deze prent met de titel ‘Het Kindje gaat school’ gaat het kind ook voor de eerste keer naar school, maar moeder gaat niet mee. Het kind verlaat schoorvoetend het huis en moeder wijst alleen maar waar het heen moet : naar de school, die om de hoek ligt. Aan de arm van het kind bengelt een abc-leesplankje om te leren lezen. Deze prent staat in het boek ‘s Menschen Begin, Midden en Einde uit 1712, dat Jan Luyken schreef en illustreerde voor zijn gelijknamige kleinzoon. In dit zgn. emblemataboek worden alle belangrijke episodes uit een mensenleven – van geboorte tot en met sterven – aan de hand van emblemen belicht. Een embleem is een prent met een daarboven geplaatst motto en een verklarend onderschrift, waarin een bepaalde levenswijsheid tot uitdrukking gebracht." ;
     dc:identifier "A 18953" ;
     dc:rights <http://creativecommons.org/publicdomain/mark/1.0/> ;

@@ -1,0 +1,418 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hdl.handle.net/11259/people.1> a schema:Organization,
+        schema:Person ;
+    rdfs:label "--" ;
+    foaf:name "--" .
+
+<http://hdl.handle.net/11259/people.10> a schema:Person ;
+    rdfs:label "Aalbers, J." ;
+    foaf:name "Aalbers, J." .
+
+<http://hdl.handle.net/11259/people.100> a schema:Person ;
+    rdfs:label "Adriaensens, Ivo" ;
+    foaf:name "Adriaensens, Ivo" .
+
+<http://hdl.handle.net/11259/people.101> a schema:Person ;
+    rdfs:label "Adriaenssen, L." ;
+    foaf:name "Adriaenssen, L." .
+
+<http://hdl.handle.net/11259/people.11> a schema:Person ;
+    rdfs:label "Aalberse, P.J.M." ;
+    foaf:name "Aalberse, P.J.M." .
+
+<http://hdl.handle.net/11259/people.12> a schema:Person ;
+    rdfs:label "Aalderink, Jac." ;
+    foaf:name "Aalderink, Jac." .
+
+<http://hdl.handle.net/11259/people.13> a schema:Person ;
+    rdfs:label "Aalders, Annemarie" ;
+    foaf:name "Aalders, Annemarie" .
+
+<http://hdl.handle.net/11259/people.14> a schema:Person ;
+    rdfs:label "Aalders, Gerard" ;
+    foaf:name "Aalders, Gerard" .
+
+<http://hdl.handle.net/11259/people.15> a schema:Person ;
+    rdfs:label "Aalders, M.V.C." ;
+    foaf:name "Aalders, M.V.C." .
+
+<http://hdl.handle.net/11259/people.16> a schema:Person ;
+    rdfs:label "Aalst, Irina van" ;
+    foaf:name "Aalst, Irina van" .
+
+<http://hdl.handle.net/11259/people.17> a schema:Person ;
+    rdfs:label "Aalst, J.M.W. van der" ;
+    foaf:name "Aalst, J.M.W. van der" .
+
+<http://hdl.handle.net/11259/people.18> a schema:Person ;
+    rdfs:label "Aalst, L.P.M. van" ;
+    foaf:name "Aalst, L.P.M. van" .
+
+<http://hdl.handle.net/11259/people.19> a schema:Person ;
+    rdfs:label "Aanstoot, A.J." ;
+    foaf:name "Aanstoot, A.J." .
+
+<http://hdl.handle.net/11259/people.2> a schema:Organization ;
+    rdfs:label "Onderzoeks- en Adviesbureau Oberon" ;
+    foaf:name "Onderzoeks- en Adviesbureau Oberon" .
+
+<http://hdl.handle.net/11259/people.20> a schema:Person ;
+    rdfs:label "Aar, J. van der" ;
+    foaf:name "Aar, J. van der" .
+
+<http://hdl.handle.net/11259/people.21> a schema:Person ;
+    rdfs:label "Aar, Joke van der" ;
+    foaf:name "Aar, Joke van der" .
+
+<http://hdl.handle.net/11259/people.22> a schema:Person ;
+    rdfs:label "Aardewerk, A." ;
+    foaf:name "Aardewerk, A." .
+
+<http://hdl.handle.net/11259/people.23> a schema:Person ;
+    rdfs:label "Aardewerk, Ruben" ;
+    foaf:name "Aardewerk, Ruben" .
+
+<http://hdl.handle.net/11259/people.24> a schema:Person ;
+    rdfs:label "Aardweg, H.P." ;
+    foaf:name "Aardweg, H.P." .
+
+<http://hdl.handle.net/11259/people.25> a schema:Person ;
+    rdfs:label "Aardweg, H.P. van den" ;
+    foaf:name "Aardweg, H.P. van den" .
+
+<http://hdl.handle.net/11259/people.26> a schema:Person ;
+    rdfs:label "Aarsen, H. van" ;
+    foaf:name "Aarsen, H. van" .
+
+<http://hdl.handle.net/11259/people.27> a schema:Organization,
+        schema:Person ;
+    rdfs:label "Aarsman, Hans" ;
+    schema:birthDate "1951-12-27" ;
+    schema:birthPlace "Amsterdam" ;
+    schema:jobTitle "fotograaf" ;
+    owl:sameAs <http://www.downloadhansaarsman.nl/> ;
+    foaf:name "Aarsman, Hans" .
+
+<http://hdl.handle.net/11259/people.28> a schema:Person ;
+    rdfs:label "Aarts, H.J." ;
+    foaf:name "Aarts, H.J." .
+
+<http://hdl.handle.net/11259/people.29> a schema:Person ;
+    rdfs:label "Aarts, Marina" ;
+    owl:sameAs <www.marina-aarts.com> ;
+    foaf:name "Aarts, Marina" .
+
+<http://hdl.handle.net/11259/people.3> rdfs:label "1st Marquess of Lothian" ;
+    foaf:name "1st Marquess of Lothian" .
+
+<http://hdl.handle.net/11259/people.30> a schema:Person ;
+    rdfs:label "Aarts, Peggy" ;
+    foaf:name "Aarts, Peggy" .
+
+<http://hdl.handle.net/11259/people.31> a schema:Person ;
+    rdfs:label "Aarts, Petra" ;
+    foaf:name "Aarts, Petra" .
+
+<http://hdl.handle.net/11259/people.32> a schema:Person ;
+    rdfs:label "Aartsz, P." ;
+    foaf:name "Aartsz, P." .
+
+<http://hdl.handle.net/11259/people.33> a schema:Organization ;
+    rdfs:label "AB-Onderzoek" ;
+    foaf:name "AB-Onderzoek" .
+
+<http://hdl.handle.net/11259/people.34> a schema:Person ;
+    rdfs:label "Abad, Antoni" ;
+    foaf:name "Abad, Antoni" .
+
+<http://hdl.handle.net/11259/people.35> a schema:Person ;
+    rdfs:label "Abbing, Hans" ;
+    foaf:name "Abbing, Hans" .
+
+<http://hdl.handle.net/11259/people.36> a schema:Person ;
+    rdfs:label "Abbing, J.R." ;
+    foaf:name "Abbing, J.R." .
+
+<http://hdl.handle.net/11259/people.37> a schema:Person ;
+    rdfs:label "Abdellaoui, Mustapha" ;
+    foaf:name "Abdellaoui, Mustapha" .
+
+<http://hdl.handle.net/11259/people.38> a schema:Person ;
+    rdfs:label "Abegg, Lilian" ;
+    foaf:name "Abegg, Lilian" .
+
+<http://hdl.handle.net/11259/people.39> a schema:Person ;
+    rdfs:label "Abel, W." ;
+    foaf:name "Abel, W." .
+
+<http://hdl.handle.net/11259/people.4> rdfs:label "3rd Earl of Lothian" ;
+    foaf:name "3rd Earl of Lothian" .
+
+<http://hdl.handle.net/11259/people.40> a schema:Person ;
+    rdfs:label "Abélès, Luce" ;
+    foaf:name "Abélès, Luce" .
+
+<http://hdl.handle.net/11259/people.41> a schema:Person ;
+    rdfs:label "Abell, J.P." ;
+    foaf:name "Abell, J.P." .
+
+<http://hdl.handle.net/11259/people.42> a schema:Person ;
+    rdfs:label "Abels, Georges" ;
+    foaf:name "Abels, Georges" .
+
+<http://hdl.handle.net/11259/people.43> a schema:Person ;
+    rdfs:label "Abels, P.H.A.M" ;
+    foaf:name "Abels, P.H.A.M" .
+
+<http://hdl.handle.net/11259/people.44> a schema:Person ;
+    rdfs:label "Aben, Rob" ;
+    foaf:name "Aben, Rob" .
+
+<http://hdl.handle.net/11259/people.45> a schema:Person ;
+    rdfs:label "Abercrombie, P." ;
+    foaf:name "Abercrombie, P." .
+
+<http://hdl.handle.net/11259/people.46> a schema:Person ;
+    rdfs:label "Aberg, Alf" ;
+    foaf:name "Aberg, Alf" .
+
+<http://hdl.handle.net/11259/people.47> rdfs:label "ABK" ;
+    foaf:name "ABK" .
+
+<http://hdl.handle.net/11259/people.48> a schema:Organization ;
+    rdfs:label "Stichting ABN AMRO Historisch Archief" ;
+    foaf:name "Stichting ABN AMRO Historisch Archief" .
+
+<http://hdl.handle.net/11259/people.49> a schema:Person ;
+    rdfs:label "About, Edmond" ;
+    foaf:name "About, Edmond" .
+
+<http://hdl.handle.net/11259/people.5> a schema:Person ;
+    rdfs:label "Aa, A.J. van der" ;
+    foaf:name "Aa, A.J. van der" .
+
+<http://hdl.handle.net/11259/people.50> a schema:Person ;
+    rdfs:label "Abrahamse, Jaap Evert" ;
+    foaf:name "Abrahamse, Jaap Evert" .
+
+<http://hdl.handle.net/11259/people.51> a schema:Person ;
+    rdfs:label "Abram, Ido" ;
+    foaf:name "Abram, Ido" .
+
+<http://hdl.handle.net/11259/people.52> a schema:Person ;
+    rdfs:label "Abramsz, S." ;
+    foaf:name "Abramsz, S." .
+
+<http://hdl.handle.net/11259/people.53> a schema:Person ;
+    rdfs:label "ACB afdeling voorlichting" ;
+    foaf:name "ACB afdeling voorlichting" .
+
+<http://hdl.handle.net/11259/people.54> a schema:Person ;
+    rdfs:label "Acda, G.M.W." ;
+    foaf:name "Acda, G.M.W." .
+
+<http://hdl.handle.net/11259/people.55> a schema:Person ;
+    rdfs:label "Achard, Amédée" ;
+    foaf:name "Achard, Amédée" .
+
+<http://hdl.handle.net/11259/people.56> a schema:Person ;
+    rdfs:label "Achdjian, Albert" ;
+    foaf:name "Achdjian, Albert" .
+
+<http://hdl.handle.net/11259/people.57> a schema:Person ;
+    rdfs:label "Achilles, Walter" ;
+    foaf:name "Achilles, Walter" .
+
+<http://hdl.handle.net/11259/people.58> a schema:Person ;
+    rdfs:label "Achleitner, Friedrich" ;
+    foaf:name "Achleitner, Friedrich" .
+
+<http://hdl.handle.net/11259/people.59> a schema:Person ;
+    rdfs:label "Acht, R.J.M. van" ;
+    foaf:name "Acht, R.J.M. van" .
+
+<http://hdl.handle.net/11259/people.6> a schema:Person ;
+    rdfs:label "Aa, Pieter van der" ;
+    schema:birthDate "1659" ;
+    schema:deathDate "1733" ;
+    foaf:name "Aa, Pieter van der" .
+
+<http://hdl.handle.net/11259/people.60> a schema:Person ;
+    rdfs:label "Acht, Rob van" ;
+    foaf:name "Acht, Rob van" .
+
+<http://hdl.handle.net/11259/people.61> a schema:Person ;
+    rdfs:label "Achten, Gerard" ;
+    foaf:name "Achten, Gerard" .
+
+<http://hdl.handle.net/11259/people.62> a schema:Person ;
+    rdfs:label "Achterbergh, van" ;
+    foaf:name "Achterbergh, van" .
+
+<http://hdl.handle.net/11259/people.63> a schema:Person ;
+    rdfs:label "Achterstraat, L." ;
+    foaf:name "Achterstraat, L." .
+
+<http://hdl.handle.net/11259/people.64> a schema:Person ;
+    rdfs:label "Acker, H." ;
+    foaf:name "Acker, H." .
+
+<http://hdl.handle.net/11259/people.65> a schema:Person ;
+    rdfs:label "Acker, Hanneke" ;
+    foaf:name "Acker, Hanneke" .
+
+<http://hdl.handle.net/11259/people.66> a schema:Person ;
+    rdfs:label "Acker, K.G. van" ;
+    foaf:name "Acker, K.G. van" .
+
+<http://hdl.handle.net/11259/people.67> a schema:Person ;
+    rdfs:label "Acker, M.J. van den" ;
+    foaf:name "Acker, M.J. van den" .
+
+<http://hdl.handle.net/11259/people.68> a schema:Person ;
+    rdfs:label "Ackerman, J.S." ;
+    foaf:name "Ackerman, J.S." .
+
+<http://hdl.handle.net/11259/people.69> a schema:Person ;
+    rdfs:label "Ackley, C.S." ;
+    foaf:name "Ackley, C.S." .
+
+<http://hdl.handle.net/11259/people.7> a schema:Person ;
+    rdfs:label "Aafjes, Bertus" ;
+    foaf:name "Aafjes, Bertus" .
+
+<http://hdl.handle.net/11259/people.71> a schema:Person ;
+    rdfs:label "Adams, Ann Jensen" ;
+    foaf:name "Adams, Ann Jensen" .
+
+<http://hdl.handle.net/11259/people.72> a schema:Person ;
+    rdfs:label "Adams, Louis" ;
+    foaf:name "Adams, Louis" .
+
+<http://hdl.handle.net/11259/people.73> a schema:Person ;
+    rdfs:label "Adams, Philip R." ;
+    foaf:name "Adams, Philip R." .
+
+<http://hdl.handle.net/11259/people.74> a schema:Person ;
+    rdfs:label "Adamson, R." ;
+    foaf:name "Adamson, R." .
+
+<http://hdl.handle.net/11259/people.75> a schema:Person ;
+    rdfs:label "Adang, Marc" ;
+    foaf:name "Adang, Marc" .
+
+<http://hdl.handle.net/11259/people.76> a schema:Person ;
+    rdfs:label "Addink-Samplonius, M." ;
+    foaf:name "Addink-Samplonius, M." .
+
+<http://hdl.handle.net/11259/people.77> a schema:Person ;
+    rdfs:label "Addison, Henry R." ;
+    foaf:name "Addison, Henry R." .
+
+<http://hdl.handle.net/11259/people.78> a schema:Person ;
+    rdfs:label "Addison, Joseph" ;
+    foaf:name "Addison, Joseph" .
+
+<http://hdl.handle.net/11259/people.79> a schema:Person ;
+    rdfs:label "Addyman, P.V." ;
+    foaf:name "Addyman, P.V." .
+
+<http://hdl.handle.net/11259/people.8> a schema:Person ;
+    rdfs:label "Aaftink, Christel" ;
+    foaf:name "Aaftink, Christel" .
+
+<http://hdl.handle.net/11259/people.80> a schema:Person ;
+    rdfs:label "Adelaar-de Hondt, H." ;
+    foaf:name "Adelaar-de Hondt, H." .
+
+<http://hdl.handle.net/11259/people.81> a schema:Person ;
+    rdfs:label "Adelaar, Dick" ;
+    foaf:name "Adelaar, Dick" .
+
+<http://hdl.handle.net/11259/people.82> a schema:Person ;
+    rdfs:label "Adelberg, S. van" ;
+    foaf:name "Adelberg, S. van" .
+
+<http://hdl.handle.net/11259/people.83> a schema:Person ;
+    rdfs:label "Adema, Carolus Borromeus" ;
+    schema:birthDate "1824" ;
+    schema:deathDate "1902" ;
+    foaf:name "Adema, Carolus Borromeus" .
+
+<http://hdl.handle.net/11259/people.84> a schema:Person ;
+    rdfs:label "Adema, Petrus Josephus" ;
+    schema:birthDate "1828" ;
+    schema:deathDate "1919" ;
+    foaf:name "Adema, Petrus Josephus" .
+
+<http://hdl.handle.net/11259/people.85> a schema:Person ;
+    rdfs:label "Adèr, R." ;
+    foaf:name "Adèr, R." .
+
+<http://hdl.handle.net/11259/people.86> a schema:Person ;
+    rdfs:label "Adhemar, H." ;
+    foaf:name "Adhemar, H." .
+
+<http://hdl.handle.net/11259/people.87> a schema:Person ;
+    rdfs:label "Adhémar, Jean" ;
+    foaf:name "Adhémar, Jean" .
+
+<http://hdl.handle.net/11259/people.88> a schema:Person ;
+    rdfs:label "Adhémar, M.J." ;
+    foaf:name "Adhémar, M.J." .
+
+<http://hdl.handle.net/11259/people.89> a schema:Person ;
+    rdfs:label "Adler, Beatrix" ;
+    foaf:name "Adler, Beatrix" .
+
+<http://hdl.handle.net/11259/people.9> a schema:Person ;
+    rdfs:label "Aakster, C.W." ;
+    foaf:name "Aakster, C.W." .
+
+<http://hdl.handle.net/11259/people.90> a schema:Person ;
+    rdfs:label "Adler, Wolfgang" ;
+    foaf:name "Adler, Wolfgang" .
+
+<http://hdl.handle.net/11259/people.91> a schema:Person ;
+    rdfs:label "ADO" ;
+    foaf:name "ADO" .
+
+<http://hdl.handle.net/11259/people.92> a schema:Person ;
+    rdfs:label "Adolph, Hubert" ;
+    foaf:name "Adolph, Hubert" .
+
+<http://hdl.handle.net/11259/people.93> a schema:Person ;
+    rdfs:label "Adriaans, Hanneke" ;
+    foaf:name "Adriaans, Hanneke" .
+
+<http://hdl.handle.net/11259/people.94> a schema:Person ;
+    rdfs:label "Adriaanse, Annemarie" ;
+    foaf:name "Adriaanse, Annemarie" .
+
+<http://hdl.handle.net/11259/people.95> a schema:Person ;
+    rdfs:label "Adriaanse, P." ;
+    foaf:name "Adriaanse, P." .
+
+<http://hdl.handle.net/11259/people.96> a schema:Person ;
+    rdfs:label "Adriaanse, P.M." ;
+    foaf:name "Adriaanse, P.M." .
+
+<http://hdl.handle.net/11259/people.97> a schema:Person ;
+    rdfs:label "Adriaansz, E.G.M." ;
+    foaf:name "Adriaansz, E.G.M." .
+
+<http://hdl.handle.net/11259/people.98> a schema:Person ;
+    rdfs:label "Adriaansz, Elly" ;
+    foaf:name "Adriaansz, Elly" .
+
+<http://hdl.handle.net/11259/people.99> a schema:Person ;
+    rdfs:label "Adriaensens, Anne-Mie" ;
+    foaf:name "Adriaensens, Anne-Mie" .
+

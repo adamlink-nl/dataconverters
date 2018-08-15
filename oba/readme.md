@@ -1,8 +1,8 @@
-# /oba/
+# Creating LOD-dataset of the Amsterdam Public Library collection metadata
 
 These scripts (python3) create the dataset <https://data.adamlink.nl/oba/adamcat/> containing a selection of publications about Amsterdam from the library catalogue of the Amsterdam Public Library ("Openbare Bibliotheek Amsterdam, or "OBA").
 
-## introduction
+## Introduction
 The data of the catalogue of the OBA is available through an API, delivering XML.
 
 ## config.py
@@ -16,10 +16,10 @@ Then:
 - it writes some OBA-local data we obtained from the API
 - creates a link to an images of the cover of the book
 
-The search-response from the API is paged in sets of 100 results. The results are written in the same directory as these scripts in a (large) series of separated Turtle-files per search-result-page.
+The search-response from the API is paged in sets of 20 results. The results are written in the directory org/ in separate a Turtle-file per search-result-page. NB sometimes there are less than 20 publications in a file, if they are skipped because the script did not resolve a URI on data.bibliotheken.nl.
 
 ## make_adamlinks_schema.py
-This script maps the datamodel of data.bibliotheken.nl to our datamodel (mainly from schema.org to Dublin Core).
+This script maps the datamodel of data.bibliotheken.nl to our datamodel (mainly from schema.org to Dublin Core). Files are read from directory org and written to org_converted.
 
-## see /make_adamlink_uris/ for the final step!
-To combine the data into one aggregated dataset we need to replace URIs with our own with owl:sameAs relations.
+## see [make_adamlink_uris](https://github.com/adamlink-nl/dataconverters/tree/master/make_adamlink_uris) for the final step!
+To combine the data into one aggregated dataset we need to replace locally used URIs with our own AdamLink URIs.

@@ -73,7 +73,7 @@ for p in range(1, pages+1):
                       "%3E&format=application%2Frdf%2Bxml&timeout=0&debug=on"
 
 #                print(uri) # debugging & progress
-                print(q) # debugging & progress
+#                print(q) # debugging & progress
 
                 # check if PPN uri exists
                 b = rdflib.Graph()
@@ -102,7 +102,7 @@ for p in range(1, pages+1):
         nr = int(p/x)
 
         s = oba.serialize(format='turtle')
-        filename = "OBAcat" + field + str(nr) + ".org.ttl"
+        filename = "org/OBAcat_" + field + str(nr) + ".ttl"
         file = open(filename,"wb")
         file.write(s)
         file.close()
@@ -113,7 +113,7 @@ for p in range(1, pages+1):
         oba.bind("void", void)
 
         s = nbt.serialize(format='turtle')
-        filename = "NBTinOBA" + field + str(nr) + ".org.ttl"
+        filename = "org/NBTinOBA_" + field + str(nr) + ".ttl"
         file = open(filename,"wb")
         file.write(s)
         file.close()
@@ -121,13 +121,13 @@ for p in range(1, pages+1):
 
 if len(oba) > 0 and len(nbt) > 0:
     s = oba.serialize(format='turtle')
-    filename = "OBAcat" + field + "rest.org.ttl"
+    filename = "org/OBAcat_" + field + "rest.ttl"
     file = open(filename,"wb")
     file.write(s)
     file.close()
 
     s = nbt.serialize(format='turtle')
-    filename = "NBTinOBA" + field + "rest.org.ttl"
+    filename = "org/NBTinOBA_" + field + "rest.ttl"
     file = open(filename,"wb")
     file.write(s)
     file.close()
