@@ -6,3 +6,7 @@ oba/config.py
 
 # cache
 oba/__pycache__
+
+# PHP part
+vendor/
+composer.lock
