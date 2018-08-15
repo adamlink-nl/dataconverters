@@ -8,7 +8,7 @@ The AdamNet Foundation creates Linked Open Data from cultural heritage metadata 
 
 ## /saa/ City Archives - images (photos, drawings, ...)
 
-## /am/ Amsterdam Museum - museumobjects (/am/)
+## /am/ Amsterdam Museum - museumobjects (paintings, drawsings, etches ...)
 
 ## /oba/ Public Library - publications (mainly books)
 Selection of the complete collection
