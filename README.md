@@ -6,10 +6,19 @@ The AdamNet Foundation creates Linked Open Data from cultural heritage metadata 
 - converts existing datasets of participating cultural heritage institutes into RDF (subject of this rep)
 - makes it available on a SPARQL-endpoint via https://data.adamlink.nl/
 
-## /saa/ City Archives - images (photos, drawings, ...)
+## Cultural Heritage Datasets
 
-## /am/ Amsterdam Museum - museumobjects (paintings, drawsings, etches ...)
+### /am/ Amsterdam Museum - museumobjects (paintings, drawsings, etches ...)
 
-## /oba/ Public Library - publications (mainly books)
+### /oba/ Public Library - publications (mainly books)
 Selection of the complete collection
 
+## Converting into AdamLink
+
+### /make_adamlink_uris/ 
+Normalization of aggregated dataset for convenient usage
+
+## Extra data
+
+### /ecartico/ University of Amsterdam (Persons)
+Set of persons from the sevnteenth century
