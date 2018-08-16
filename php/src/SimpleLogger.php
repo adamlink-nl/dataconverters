@@ -5,7 +5,6 @@ namespace Leones\AdamLinkR;
 
 class SimpleLogger
 {
-
     /** @var string  */
     private $logFile;
 
@@ -14,11 +13,13 @@ class SimpleLogger
         $this->logFile = $logFile;
     }
 
-    public function logToCsv(string $msg)
+    public function logToCsv(array $data)
     {
         $fp = fopen($this->logFile, 'a');
         fwrite($fp, $bom = (chr(0xEF) . chr(0xBB) . chr(0xBF)));
-        fputcsv($fp, [$msg]);
+        foreach ($data as $row) {
+            fputcsv($fp, (array)$row);
+        }
         fclose($fp);
     }
 

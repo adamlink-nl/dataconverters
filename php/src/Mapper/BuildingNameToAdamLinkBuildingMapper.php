@@ -3,53 +3,32 @@
 
 namespace Leones\AdamLinkR\Mapper;
 
-use Leones\AdamLinkR\SimpleLogger;
-use PDO;
-
 /**
  * Maps a building name to an AdamLink URI
  */
-final class BuildingNameToAdamLinkBuildingMapper
+final class BuildingNameToAdamLinkBuildingMapper extends BaseMapper
 {
-    protected $logFile = 'buildings_not_found.csv';
-    protected $notFoundCache = [];
 
-    public function __construct()
+    public function map(string $name):string
     {
-        SimpleLogger::$logFile = $this->logFile;
-    }
-
-    public function map(string $name) : string
-    {
-        // skip if we tried to get this name before
+        // skip if we tried to get this name before and failed
         if (isset($this->notFoundCache[$name])) {
             return '';
         }
 
-        $stmt = $this->pdo->query("set sql_mode=TRADITIONAL");
-        $stmt->execute();
+        // return found value
+        if (isset($this->foundCache[$name])) {
+            return $this->foundCache[$name];
+        }
 
-        $stmt = $this->pdo->prepare("
-            SELECT buildings.id, buildings.name_in_uri, name FROM buildingnames 
-            LEFT JOIN buildings ON buildingnames.building_identifier = buildings.id
-            WHERE name = :q  
-            GROUP BY buildings.id
-            ORDER BY preflabel"
-        );
+        $uri = $this->handleResult($name, $this->sparqlClient->findBuildingByName($name));
 
-        $stmt->execute([
-            ':q' => $name,
-        ]);
-        $found = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if (count($stmt->rowCount()) > 0 && $found['id'] > 0) {
-            return sprintf('https://adamlink.nl/geo/building/%s/%d',
-                $found['name_in_uri'], $found['id']
-            );
+        if (strlen($uri) > 1) {
+            $this->foundCache[$name] = $uri;
+            return $uri;
         }
 
         $this->notFoundCache[$name] = 1;
-        $this->logToFile('"' . $name . '"');
         return '';
     }
 

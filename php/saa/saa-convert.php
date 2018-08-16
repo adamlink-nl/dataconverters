@@ -5,13 +5,14 @@ use Leones\AdamLinkR\Converter\Helper;
 use Leones\AdamLinkR\Converter\SaaConverter;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/../bootstrap.php');
 
 /**
  * Reads all xml-files in $dirIn and converts them to RDF turtle, for use in the AdamLink triplestore
  * Converts people, buildings and streets to AdamLink URI's
  * Converts types to AAT-URIS
  */
-$dirIn  = __DIR__ . '/../data/saa/bma';
+$dirIn = __DIR__ . '/../data/saa/bma';
 $dirOut = __DIR__ . '/../data/saa/bma';
 
 
@@ -33,6 +34,13 @@ foreach ($it as $fileinfo) {
     } else {
         Helper::writeln('Converting SAA to graph.');
     }
-    $converter = new SaaConverter($fileinfo->getPathname(), $outputFile, 'turtle');
+    $converter = new SaaConverter(
+        $fileinfo->getPathname(),
+        $outputFile,
+        $personMapper,
+        $buildingMapper,
+        $streetMapper,
+        'turtle'
+    );
     $converter->convert($what);
 }

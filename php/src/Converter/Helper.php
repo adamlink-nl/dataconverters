@@ -88,13 +88,4 @@ class Helper
         return $data;
     }
 
-    public static function writeToCsv(string $file, array $data)
-    {
-        $fp = fopen($file, 'a');
-        fwrite($fp, $bom = (chr(0xEF) . chr(0xBB) . chr(0xBF)));
-        foreach ($data as $row) {
-            fputcsv($fp, (array)$row);
-        }
-        fclose($fp);
-    }
 }

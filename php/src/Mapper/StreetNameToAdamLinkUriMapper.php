@@ -3,49 +3,33 @@
 
 namespace Leones\AdamLinkR\Mapper;
 
-use PDO;
-
 /**
  * Maps a street name to an AdamLink URI
  */
-final class StreetNameToAdamLinkUriMapper
+final class StreetNameToAdamLinkUriMapper extends BaseMapper
 {
     const ADAMLINK_API = 'https://adamlink.nl/api/search/?q=';
 
-    protected $logFile = 'street_not_found.csv';
-
-    public function __construct()
+    public function map(string $name):string
     {
-
-    }
-
-    // USING the local database
-    public function map(string $name) : string
-    {
-        // skip if we tried to get this name before
+        // skip if we tried to get this name before and failed
         if (isset($this->notFoundCache[$name])) {
             return '';
         }
 
-        // get exact matches
-        $stmt = $this->pdo->prepare("SELECT streets.id, streets.name_in_uri, name FROM streetnames
-                                        LEFT JOIN streets ON streetnames.street_identifier = streets.id
-                                        WHERE name = :q 
-                                        GROUP BY streets.id
-                                        ORDER BY preflabel");
-        $stmt->execute([
-            ':q' => $name,
-        ]);
-        $found = $stmt->fetch(PDO::FETCH_ASSOC);
+        // return found value
+        if (isset($this->foundCache[$name])) {
+            return $this->foundCache[$name];
+        }
 
-        if (count($stmt->rowCount()) > 0 && $found['id'] > 0) {
-            return sprintf('https://adamlink.nl/geo/street/%s/%d',
-                $found['name_in_uri'], $found['id']
-            );
+        $uri = $this->handleResult($name, $this->sparqlClient->findStreetByName($name));
+
+        if (strlen($uri) > 1) {
+            $this->foundCache[$name] = $uri;
+            return $uri;
         }
 
         $this->notFoundCache[$name] = 1;
-        $this->logToFile('"' . $name . '"');
         return '';
     }
 

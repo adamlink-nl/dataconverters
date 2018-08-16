@@ -38,10 +38,13 @@ final class SaaConverter
     public function __construct(
         string $xmlFile,
         string $fileToWrite,
+        PersonToAdamLinkPersonMapper $personMapper,
+        BuildingNameToAdamLinkBuildingMapper $buildingMapper,
+        StreetNameToAdamLinkUriMapper $streetMapper,
         string $format
     ) {
         if (! file_exists($xmlFile)) {
-            throw new \Exception(sprintf('File "%s" does not exist', $xmlFile));
+            throw new \Exception(sprintf('Import file "%s" does not exist', $xmlFile));
         }
         $this->reader = new \XMLReader();
         $this->reader->open($xmlFile);
@@ -50,12 +53,12 @@ final class SaaConverter
             unlink($fileToWrite);
         }
 
+        $this->personMapper = $personMapper;
+        $this->buildingMapper = $buildingMapper;
+        $this->streetMapper = $streetMapper;
+
         $this->fileToWrite = $fileToWrite;
         $this->format = $format;
-
-        $this->personMapper = new PersonToAdamLinkPersonMapper();
-        $this->buildingMapper = new BuildingNameToAdamLinkBuildingMapper();
-        $this->streetMapper = new StreetNameToAdamLinkUriMapper();
     }
 
     public function convert(string $mode = 'record')
@@ -105,6 +108,7 @@ final class SaaConverter
         } else {
             foreach ($records as $row) {
                 $graph = $this->addToGraph($graph, $row);
+                print '.';
             }
         }
 
