@@ -1,6 +1,6 @@
 # Creating LOD-dataset of the Amsterdam Public Library collection metadata
 
-These scripts (python3) create the dataset <https://data.adamlink.nl/oba/adamcat/> containing a selection of publications about Amsterdam from the library catalogue of the Amsterdam Public Library ("Openbare Bibliotheek Amsterdam, or "OBA").
+These scripts (python3) create the dataset <https://data.adamlink.nl/oba/amcat/> containing a selection of publications about Amsterdam from the library catalogue of the Amsterdam Public Library ("Openbare Bibliotheek Amsterdam, or "OBA").
 
 ## Introduction
 The data of the catalogue of the OBA is available through an API, delivering XML.
