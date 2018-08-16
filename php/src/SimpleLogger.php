@@ -5,18 +5,25 @@ namespace Leones\AdamLinkR;
 
 class SimpleLogger
 {
-    public static $logFile = '/../adamlink.log';
 
-    public static function logToCsv(string $msg)
+    /** @var string  */
+    private $logFile;
+
+    public function __construct(string $logFile)
     {
-        $fp = fopen(self::$logFile, 'a');
+        $this->logFile = $logFile;
+    }
+
+    public function logToCsv(string $msg)
+    {
+        $fp = fopen($this->logFile, 'a');
         fwrite($fp, $bom = (chr(0xEF) . chr(0xBB) . chr(0xBF)));
         fputcsv($fp, [$msg]);
         fclose($fp);
     }
 
-    public static function logToFile(string $msg)
+    public function logToFile(string $msg)
     {
-        file_put_contents(self::$logFile, $msg . PHP_EOL, FILE_APPEND);
+        file_put_contents($this->logFile, $msg . PHP_EOL, FILE_APPEND);
     }
 }

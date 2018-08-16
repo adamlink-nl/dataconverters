@@ -150,16 +150,14 @@ final class SaaConverter
             Helper::fixQuotesInLiteralString((string)$xml->children($ns['dc'])->description));
 
         $this->handleCreators($record, $xml);
-        //$this->handleSubjects($record, $xml);
+        $this->handleSubjects($record, $xml);
 
         $record->set('dct:provenance', (string)$xml->children($ns['dc'])->provenance);
         $graph->add($record, 'dc:source', Helper::cleanUpString((string)$xml->children($ns['dc'])->source));
 
-        // tod write handleRights
         $dcRights = (string)$xml->children($ns['dc'])->rights;
         $record->set('dc:rights', $dcRights);
 
-        // todo keep rights restrictions in place
         if ($dcRights === 'Auteursrechtvrij') {
             $record->addResource(
                 'dcterms:rightsStatement',
@@ -185,12 +183,13 @@ final class SaaConverter
     }
 
 
+    /**
+     * Extract all subjects, and supply the handleSubject with correct type
+     * but also pass along entire $xml, because we need to extract data form other elements (sk:parameter)
+     */
     private function handleSubjects(Resource $record, \SimpleXMLElement $xml): Resource
     {
-        // extract all subjects, and supply the handleSubject with correct type
-        // but also pass along entire $xml, because we need to extract data form other elements (sk:parameter)
         $subjects = $xml->xpath('dc:subject');
-
         if (count($subjects) > 0) {
             foreach ($subjects as $subject) {
                 $this->handleSubject($record, $xml, (string) $subject->attributes()->{'name'});

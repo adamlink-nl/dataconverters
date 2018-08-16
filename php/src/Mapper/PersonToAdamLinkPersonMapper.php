@@ -3,6 +3,7 @@
 
 namespace Leones\AdamLinkR\Mapper;
 
+use EasyRdf\Sparql\Result;
 use Leones\AdamLinkR\SimpleLogger;
 use Leones\AdamLinkR\Sparql\AdamLinkClient;
 
@@ -12,13 +13,15 @@ use Leones\AdamLinkR\Sparql\AdamLinkClient;
  */
 final class PersonToAdamLinkPersonMapper
 {
-    protected $logFile = 'persons_not_found.csv';
     protected $notFoundCache = [];
     protected $foundCache = [];
 
-    public function __construct()
+    /** @var SimpleLogger */
+    private $logger;
+
+    public function __construct(SimpleLogger $logger)
     {
-        SimpleLogger::$logFile = $this->logFile;
+        $this->logger = $logger;
     }
 
     /**
@@ -37,7 +40,7 @@ final class PersonToAdamLinkPersonMapper
         }
 
         $client = new AdamLinkClient();
-        $uri = $client->findPersonByName($name);
+        $uri = $this->handleResult($name, $client->findPersonByName($name));
 
         if (strlen($uri) > 1) {
             $this->foundCache[$name] = $uri;
@@ -48,4 +51,19 @@ final class PersonToAdamLinkPersonMapper
         return '';
     }
 
+    private function handleResult(string $name, Result $sparqlResult): string
+    {
+        if ($sparqlResult->numRows() < 1) {
+            $this->logger->logToFile('No adamlink URI for ' . $name);
+        }
+        if ($sparqlResult->numRows() > 1) {
+            $this->logger->logToFile('Multiple adamlink URIs for ' . $name);
+        }
+        if ($sparqlResult->numRows() === 1) {
+            $uri = (string) current($sparqlResult)->s;
+            $this->logger->logToFile('Found 1 adamlink URI for ' . $name . ' uri: ' . $uri);
+            return $uri;
+        }
+        return '';
+    }
 }
