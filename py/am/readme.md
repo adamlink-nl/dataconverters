@@ -8,7 +8,7 @@ The data from the museumcatalogue is available through an API delivering Adlib n
 ## amcollect
 
 ### testXSLT_amcollect.py
-This script sents a request to the API to deliver all records, transforms the data (client-side) into RDF/XML with the adlibXML2rdf.XSLT stylesheet (which can be used server-side as well).
+This script sends a request to the API to deliver all records, transforms the data (client-side) into RDF/XML with the adlibXML2rdf.XSLT stylesheet (which can be used server-side as well).
 
 The search-response from the API is paged in sets of 100 results. The results are written in the directory org/ in separate a Turtle-file per search-result-page.
 
@@ -18,7 +18,7 @@ This script adds the AdamLink-specific void:inDataset-triple for <https://data.a
 ## amperson
 
 ### testXSLT_amperson.py
-This script sents a request to the API to deliver all records, transforms the data (client-side) into RDF/XML with the adlibPersonXML2rdf.XSLT stylesheet (which can be used server-side as well).
+This script sends a request to the API to deliver all records, transforms the data (client-side) into RDF/XML with the adlibPersonXML2rdf.XSLT stylesheet (which can be used server-side as well).
 
 The search-response from the API is paged in sets of 100 results. The results are written in the directory org/ in separate a Turtle-file per search-result-page.
 
