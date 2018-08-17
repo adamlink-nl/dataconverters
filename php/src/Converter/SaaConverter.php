@@ -13,6 +13,10 @@ use Leones\AdamLinkR\Mapper\StreetNameToAdamLinkUriMapper;
 use Leones\AdamLinkR\Mapper\StringToAATMapper;
 
 
+/**
+ * Converts people, buildings and streets to AdamLink URI's
+ * Converts types to AAT-URIS
+ */
 final class SaaConverter
 {
     const BATCH_SIZE = 400;
@@ -104,6 +108,7 @@ final class SaaConverter
         if ($mode === 'image') {
             foreach ($records as $row) {
                 $graph = $this->addImagesToGraph($graph, $row);
+                print '.';
             }
         } else {
             foreach ($records as $row) {
@@ -126,10 +131,14 @@ final class SaaConverter
 
         $id = Helper::cleanUpString((string)$xml->children($ns['dc'])->identifier);
 
-        /** @var Resource $record */
-        $record = $graph->resource($this->uri($id), 'edm:ProvidedCHO');
+        $dcRights = (string)$xml->children($ns['dc'])->rights;
 
-        $this->handleImages($record, $id);
+        if ($dcRights === 'Auteursrechtvrij' || $dcRights === 'Stadsarchief Amsterdam') {
+            /** @var Resource $record */
+            $record = $graph->resource($this->uri($id), 'edm:ProvidedCHO');
+
+            $this->handleImage($record, $id);
+        }
 
         return $graph;
     }
@@ -175,10 +184,9 @@ final class SaaConverter
         return $graph;
     }
 
-    public function handleImages(Resource $record, string $identifier): Resource
+    public function handleImage(Resource $record, string $identifier): Resource
     {
         $image = $this->fetchImageThroughOpenSearchApi($identifier);
-        print '.';
         if (strlen($image) > 1) {
             $record->addResource('foaf:depiction', $image);
         }
@@ -196,7 +204,7 @@ final class SaaConverter
         $subjects = $xml->xpath('dc:subject');
         if (count($subjects) > 0) {
             foreach ($subjects as $subject) {
-                $this->handleSubject($record, $xml, (string) $subject->attributes()->{'name'});
+                $this->handleSubject($record, $xml, (string)$subject->attributes()->{'name'});
             }
         }
 
@@ -429,7 +437,7 @@ final class SaaConverter
         $xml = simplexml_load_file($file);
         $image = (string)$xml->channel->item->enclosure['url'];
 
-        if (!strpos($image, '/.jpg') && $image !== '') {
+        if (! strpos($image, '/.jpg') && $image !== '') {
             return str_replace('140x140', '640x480', $image);
         }
 
