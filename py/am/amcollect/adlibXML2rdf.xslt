@@ -38,7 +38,7 @@
   </xsl:template>
 
   <xsl:template match="record">
-    <xsl:element name="edm:providedCHO">
+    <xsl:element name="edm:ProvidedCHO">
       <xsl:attribute name="rdf:about">
         <xsl:value-of select="persistent_ID"/>
       </xsl:attribute>
