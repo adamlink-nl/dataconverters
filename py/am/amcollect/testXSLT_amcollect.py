@@ -25,7 +25,7 @@ while (numberFound > (page * numberShow)):
     # read numberFound
     hits = dom.find(".//hits")
     numberFound = int(hits.text)
-    numberFound = 500 # by overwriting you can shortcut for testing
+#    numberFound = 500 # by overwriting you can shortcut for testing
 
     # transform into RDF/XML
     newdom = transform(dom)

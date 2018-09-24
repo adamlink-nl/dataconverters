@@ -1,0 +1,51 @@
+# get Beeldmateriaal
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX gvp: <http://vocab.getty.edu/ontology#>
+PREFIX xl: <http://www.w3.org/2008/05/skos-xl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+CONSTRUCT {
+  ?cho foaf:depiction ?image .
+  ?cho dc:type ?typeLabel .
+  ?cho dc:title ?title .
+  ?cho dc:creator ?creator .
+  ?cho dc:subject ?subject .
+  ?cho dc:subject ?spatial .
+  ?cho dc:description ?description .
+  ?cho void:inDataset ?dataset .
+}
+WHERE {
+  ?cho dc:type ?type .
+  ?type gvp:broaderPreferred* <http://vocab.getty.edu/aat/300179869> .
+  ?type xl:prefLabel ?typeLabelId .
+  ?typeLabelId xl:literalForm ?typeLabel .
+
+  ?cho dc:title ?title .
+  ?cho foaf:depiction ?image .
+
+  ?cho void:inDataset ?dataset .
+
+  OPTIONAL {
+     ?cho dc:creator/dc:creator/rdfs:label | dc:creator/dc:creator | dc:creator/rdfs:label | dc:creator ?creator .
+     FILTER(isLiteral(?creator))
+  }
+
+  OPTIONAL {?cho dc:subject/rdfs:label | dc:subject ?subject .
+  FILTER(isLiteral(?subject))
+  }
+
+  OPTIONAL {?cho dct:spatial/rdfs:label | dct:spatial ?spatial .
+  FILTER(isLiteral(?spatial))
+  }
+
+  OPTIONAL {?cho dc:description ?description .
+#  FILTER (lang(?description) = 'nl')
+  }
+}
+LIMIT 10000
