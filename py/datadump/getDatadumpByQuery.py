@@ -10,8 +10,8 @@ with open ("beeldmateriaal.rq", "r") as myfile:
 
 sparql = SPARQLWrapper(endpoint)
 offset = 0
-start = 100
-stop = 105
+start = 0
+stop = 2
 
 while start < stop:
     query = q + " OFFSET " + str(start * 10000)
@@ -22,9 +22,9 @@ while start < stop:
     g = Graph()
     g.parse(data=results, format="n3")
     if len(g) > 0:
-        s = g.serialize(format='turtle')
+        s = g.serialize(format='pretty-xml')
 
-        filename = "datadump/dump" + str(start) + ".ttl"
+        filename = "beeldmateriaal/dump" + str(start) + ".rdf.xml"
         f = open(filename,"wb")
         f.write(s)
         f.close()
